@@ -55,7 +55,7 @@ body{
     margin: 5px;
     overflow: hidden;
 }
-.icon i, .email i{
+.icon i, #email i{
     display: inline-block;
     height: 35px;
     width: 35px;
@@ -114,6 +114,7 @@ body{
 /* CSS TEXTO */
 
 .texto{
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -126,17 +127,17 @@ body{
     text-align: justify;
     width: 650px;
     height: 200px;
-    padding: 30px 20px 30px 20px;
+    padding: 60px 20px 30px 20px;
     border-radius: 10px;
     color:rgb(0, 0, 0);
-    background: #ece2e254;
+    background: #123f2c2a;
     overflow: hidden;
-    box-shadow: 10px 10px 10px 10px rgb(0, 0, 0, 0.1); /*RGBA = ALPHA PARA TRANSPARENCIAS */
+    box-shadow: 2px 2px 2px 2px rgb(0, 0, 0, 0.1); /*RGBA = ALPHA PARA TRANSPARENCIAS */
     /* cursor: pointer; */
 
 }
 
-.titulo1{
+.subtitulo{
     margin-top: 40px;
     color:rgb(19, 18, 18);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -145,20 +146,24 @@ body{
     margin-bottom: 10px; /*conhecimento front end*/
 }
 
-.sobre-mim{
+#sobre-mim{
+    position: absolute;
+    top: -20px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: auto;
-    margin-top: 10px;
+    margin-top: 25px;
     color: rgb(12, 12, 12);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 25px;
     text-align: justify;
+    padding: 5px;
+   
 
 }
 
-.titulo2{
+.subtitulo{
     margin-top: 40px;
     color:rgb(20, 20, 20);
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -201,13 +206,13 @@ body{
     margin: 15px;
 }
 
-.Projetos{
+.projetos{
     margin: auto;
     margin-top: 40px;
     flex-direction: column;
     
 }
-.Projetos a{
+.projetos a{
     text-decoration: none;
     color: rgb(236, 247, 225)
 }
@@ -233,4 +238,102 @@ body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
+
+/*Dispositivos Mobiles*/
+@media (max-width:700px){
+    .imagem img {
+        width: 150px;
+        border-radius: 200px;
+        margin-top: 30px;
+    }
+
+    .texto{
+        width: 350px;
+        height: 500px;
+    }
+
+    
+    .langs img{
+        width: 150px;
+    }
+
+
+    .item{
+        width: 350px;
+
+    }
+
+    #video{
+        width: 330px;
+    }
+
+} /*Fim resolucao 700px*/
+
+@media (max-width:500px){
+    .imagem img{
+        width: 120px;
+    }
+
+    .texto{
+        padding: 15px;
+        width: 244px;
+        height: 680px;
+        margin-top: 30px;
+    }
+
+    .subtitulo{
+        font-size: 15px;
+        margin-top: 15px;
+    }
+
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #video{
+        width:270px;
+        height: 160px;
+    }
+    .item{
+        width: 265px;
+        height: 40px;
+    }
+
+    .langs img{
+        margin-top: 15px;
+        width: 120px;
+    }
+
+    .icon, #email {
+        width: 25px;
+        height: 25px;
+        border-radius: 30px;
+
+    }
+    .icon i, #email i{
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 15px;
+        border-radius: 30px;
+
+    }
+    .icon span {
+        margin-right: 43px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+
+    .rodape{
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 20px;
+
+    }
+    /* FIM RESOLUCAO 500PX*/
+
+    }
 
