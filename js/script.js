@@ -1,25 +1,27 @@
-// tres constantes para referenciar as ITEM nas DIVS Projetos 
+// tres constantes para referenciar as ITEM nas DIVS Projetos
 
-const form = document.getElementById('Formulario');
-const site = document.getElementById('Site Responsivo');
-const port = document.getElementById('Site');
+/* tres constantes para referenciar os id das divs no projeto */
 
-const videoFormulario = document.querySelector('.videoFormulario');
-const videoSiteResponsivo = document.querySelector('.videoSiteResponsivo');
-const videoSite= document.querySelector('.videoSite');
+const form = document.getElementById("form");
+const videoForm = document.querySelector("#videoForm");
 
-// evento de click
-form.addEventListener('click',() =>{
-    form.classList.toggle('active');
-    videoFormulario.classList.toogle('active');
-});
+form.addEventListener("click", () => {
+    form.classList.toggle("active");
+    videoForm.classList.toggle("active");
+})
 
-site.addEventListener('click',() =>{
-    site.classList.toggle('active');
-    videoSiteResponsivo.classList.toogle('active');
-});
+const resp = document.getElementById("resp");
+const videoResp = document.querySelector("#videoResp");
 
-port.addEventListener('click',() =>{
-    port.classList.toggle('active');
-    videoSite.classList.toogle('active');
-});
+resp.addEventListener("click", () => {
+    resp.classList.toggle("active");
+    videoResp.classList.toggle("active");
+})
+
+const site = document.getElementById("site");
+const videoSite = document.querySelector("#videoSite");
+
+site.addEventListener("click", () => {
+    site.classList.toggle("active");
+    videoSite.classList.toggle("active");
+})
